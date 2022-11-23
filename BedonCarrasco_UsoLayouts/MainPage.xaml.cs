@@ -9,16 +9,10 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+    void OnScrollViewScrolled(object sender, ScrolledEventArgs e)
+    {
+        Console.WriteLine($"ScrollX: {e.ScrollX}, ScrollY: {e.ScrollY}");
+    }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
 }
 
