@@ -16,7 +16,7 @@ public partial class MainPage : ContentPage
 
 	void OnFinalButtonClicked(object sender, EventArgs e)
 	{
-		Scroll.ScrollToAsync(0, 0, true);
+		Scroll.ScrollToAsync(0, 5000, true);
 	}
 }
 
