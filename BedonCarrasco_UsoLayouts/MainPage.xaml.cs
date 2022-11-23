@@ -14,9 +14,9 @@ public partial class MainPage : ContentPage
         Console.WriteLine($"ScrollX: {e.ScrollX}, ScrollY: {e.ScrollY}");
     }
 
-	void OnFinalButtonClicked(object sender, EventArgs e)
-	{
-		Scroll.ScrollToAsync(0, 5000, true);
-	}
+    void OnFinalButtonClicked(object sender, EventArgs e)
+    {
+        Scroll.ScrollToAsync(0, 5000, true);
+    }
 }
 
